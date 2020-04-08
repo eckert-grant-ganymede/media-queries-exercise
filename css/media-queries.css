@@ -76,3 +76,48 @@ footer {
     color: black;
 
 }
+
+@media screen and (min-width: 768px){
+    body{
+        display: grid;
+        grid-template-areas:"h1 h1 nav"
+                            "img img img"
+                            "img img img"
+                            "img img img"
+                            "main main sub"
+                            " . . . "
+                            "footer footer .";
+        grid-template-rows: repeat(7 , 1fr);
+        grid-column-gap: 1em;
+    }
+    h1 {
+        grid-area: h1;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .nav-links {
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-links li {
+        background-color: white;
+
+    }
+    .header-img {
+        grid-area: img;
+    }
+    .main {
+        grid-area: main;
+    }
+    .sub-section {
+        grid-area: sub;
+    }
+    .alert-info {
+        display: none;
+    }
+    footer {
+        grid-area: footer;
+    }
+}

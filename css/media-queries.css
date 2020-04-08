@@ -1,10 +1,10 @@
-*{
+* {
     box-sizing: border-box;
 }
 body {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin:auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 body * {
@@ -15,4 +15,31 @@ body * {
 nav {
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    background-color: #cccccc;
+    border: none;
+    padding: 1em 0;
+    margin: 1em;
+}
+
+h1 {
+    text-align: center;
+    padding: .5em 0;
+    margin: .5em;
+}
+
+.alert-info {
+    text-align: center;
+    background-color: #ccffff;
+    border: 1px solid #cccccc;
+    padding: 1em 0;
+    margin: 1em;
 }

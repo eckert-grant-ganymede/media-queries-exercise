@@ -62,8 +62,15 @@ h2{
 footer {
     margin-top: 4em;
     margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
 }
-
+#social-media-links {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    width: 20%;
+}
 .alert-info {
     text-align: center;
     background-color: #ccffff;
@@ -86,7 +93,7 @@ footer {
                             "img img img"
                             "main main sub"
                             " . . . "
-                            "footer footer .";
+                            "footer footer footer";
         grid-template-rows: repeat(7 , 1fr);
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 1em;
@@ -125,6 +132,7 @@ footer {
     }
     footer {
         grid-area: footer;
+        display: flex;
     }
    h2 {
        margin-bottom: auto;
@@ -135,4 +143,12 @@ footer {
    section>p {
        margin-top: 3em;
    }
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        text-align: right;
+        list-style: none;
+        width: 75%;
+    }
+
 }
